@@ -307,10 +307,10 @@ function adding(array){
                 World.add(world, Bodies.fromVertices(Math.floor(Math.random() * 300)+50,Math.floor(Math.random() * 300)+50, array[i][3], render_setting[array[i][4]]));
         }
         if(array[i][0] === 'rec'){
-            World.add(world, Bodies.rectangle(Math.floor(Math.random() * 300)+50,Math.floor(Math.random() * 300)+50, array[i][3]*20, array[i][4]*20, render_setting[array[i][5]]));
+            World.add(world, Bodies.rectangle(Math.floor(Math.random() * 300)+50,Math.floor(Math.random() * 300)+50, array[i][3]*25, array[i][4]*25, render_setting[array[i][5]]));
         }
         if(array[i][0] === 'cir'){
-            World.add(world, Bodies.circle(Math.floor(Math.random() * 300)+50,Math.floor(Math.random() * 300)+50, array[i][3]/2*20, render_setting[array[i][4]]));
+            World.add(world, Bodies.circle(Math.floor(Math.random() * 300)+50,Math.floor(Math.random() * 300)+50, array[i][3]/2*25, render_setting[array[i][4]]));
         }
     }
 }
